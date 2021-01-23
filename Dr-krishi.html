@@ -86,10 +86,18 @@
       </header>
     <section class="banner" style="background-color: #73bffd;">
 
+
+      <!-- changed media query value for images
+      For above 1024px large image
+      For below 400px medium image
+      For below 230px small image
+    
+    before you used min-width for all images changed it to max-width for smaller images
+  that means that property will be applied till specific width only after that it will not-->
       <picture>
         <source srcset="Images/banners/drk-banner.jpg" media="(min-width: 1024px)" class="img-fluid">
-        <source srcset="Images/banners/drk-banner-medium.jpg" media="(min-width: 400px)" class="img-fluid">
-        <source srcset="Images/banners/drk-banner-small.jpg" media="(min-width: 230px)" class="img-fluid">
+        <source srcset="Images/banners/drk-banner-medium.jpg" media="(max-width: 400px)" class="img-fluid">
+        <source srcset="Images/banners/drk-banner-small.jpg" media="(max-width: 230px)" class="img-fluid">
         <img alt="" src="Images/banners/drk-banner.jpg" class="img-fluid">
       </picture>
 

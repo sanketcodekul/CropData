@@ -1,3 +1,5 @@
+
+
 .navbar{
   padding-right: 100px;
 }
@@ -655,6 +657,8 @@ container will be in row direction by default for mobile view*/
     max-width: 100%;
     height: auto;
   }
+
+  
 }
 
 /*CSS style will apply for more than 992px device i.e min width 992px
