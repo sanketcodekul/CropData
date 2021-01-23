@@ -1,4 +1,6 @@
-
+.navbar{
+  padding-right: 100px;
+}
 
 /*Display dropdown on hover*/
 @media all and (min-width: 992px) { 
@@ -24,13 +26,18 @@
   text-align: left;}
 }
 
+/*line shadow between dropdown menu list*/
+.navbar .nav-item li{
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+}
+
 /* Dropdown menu  links CSS*/
 .navbar .nav-item .dropdown-menu a{
 display: block;
-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 padding: 0.75rem;
 position: relative;
 border-bottom: none;
+border-left: none;
 color: #000000;
 font-weight: 600;
 text-decoration: none;
@@ -45,7 +52,7 @@ text-decoration: none;
 .navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:focus:active {
   /* color: #fff; */
   border-bottom: solid 1px #fff; 
-  color: blue;
+  /* color: blue; */
   opacity: 1;
   z-index: 9999;
   top: 100%;
@@ -67,11 +74,11 @@ text-decoration: none;
 }
 
 /*change dropdown link color and move on x axis by 15px*/
-.navbar .dropdown-menu a:hover{
+.navbar .dropdown-menu li a:hover{
 	color: blue;
   transform: translateX(15px);
   padding: 0.75rem 0.75rem 0.75rem 1.5rem;
-  border-bottom: none;
+  border-left: none;
   color: #2935e8;
 }
 
